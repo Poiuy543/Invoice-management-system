@@ -1,0 +1,7 @@
+# .gitignore
+node_modules/
+.env
+*.log
+client/node_modules/
+client/dist/
+server/node_modules/
