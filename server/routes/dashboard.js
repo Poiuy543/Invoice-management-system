@@ -42,7 +42,7 @@ router.get('/', authMiddleware, async (req, res) => {
         WHERE p.invoice_id = i.id
       ), 0)), 0) as total
       FROM invoices i
-  
+      WHERE
       i.status IN ('Sent', 'Overdue')
     `;
     const outstanding = await pool.query(outstandingQuery, queryParams);

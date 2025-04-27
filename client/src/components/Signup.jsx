@@ -48,9 +48,9 @@ function Signup() {
   };
 
   return (
-    <div className="row justify-content-center">
-      <div className="col-md-6">
-        <h2 className="mb-4">Signup</h2>
+    <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
+      <div className="card shadow-sm p-4" style={{ maxWidth: '400px', width: '100%' }}>
+        <h2 className="text-center mb-4">Signup</h2>
         {error && <div className="alert alert-danger">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -99,7 +99,7 @@ function Signup() {
             </select>
             {validationErrors.role && <div className="invalid-feedback">{validationErrors.role}</div>}
           </div>
-          <button type="submit" className="btn btn-primary">Signup</button>
+          <button type="submit" className="btn btn-primary w-100">Signup</button>
         </form>
       </div>
     </div>
